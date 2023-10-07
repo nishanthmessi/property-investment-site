@@ -3,7 +3,7 @@ import BarChartImgsm from '../assets/img/barchart-sm.png'
 
 const InvestmentSection = () => {
   return (
-    <div className='flex flex-col p-[60px]'>
+    <div className='flex flex-col mx-auto container p-[60px]'>
       <div className='flex flex-col gap-[16px] w-[303px] sm:w-auto -mx-[30px] sm:-mx-0'>
         <h1 className='flex flex-col freight-font text-[32px] sm:text-[40px] font-[500] leading-[40px] sm:leading-[48px]'>
           <span>Why you should choose</span>
@@ -21,7 +21,7 @@ const InvestmentSection = () => {
           long-term wealth.
         </p>
       </div>
-      <div className='hidden sm:block ml-[48px] -mt-[154px]'>
+      <div className='hidden sm:block ml-[48px] lg:-mt-[154px]'>
         <img src={BarChartImg} alt='' />
       </div>
       <div className='sm:hidden w-[375px] -m-[60px] mt-[90px] mb-[60px]'>

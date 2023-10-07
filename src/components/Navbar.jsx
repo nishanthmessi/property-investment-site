@@ -2,7 +2,7 @@ import Logo from '../assets/img/logo1.png'
 
 const Navbar = () => {
   return (
-    <div className='fixed top-0 bg-white sm:w-full flex justify-between items-center px-[20px] sm:px-[56px] py-[22px] h-[87px] w-[100%] z-[10]'>
+    <div className='fixed top-0 bg-white sm:w-full flex justify-between items-center px-[20px] sm:px-[56px] py-[22px] h-auto md:h-[87px] w-[100%] z-[10]'>
       <div>
         <img src={Logo} alt='' className='w-[74px] h-[71px]' />
       </div>
