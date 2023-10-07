@@ -32,7 +32,7 @@ const AboutSection = () => {
         </defs>
       </svg>
 
-      <div className='flex flex-col md:flex-row items-center md:items-start px-[26px] md:pl-[20px] pt-[50px] sm:pt-[115px] gap-[47px] md:gap-[126px] h-[794px]'>
+      <div className='flex flex-col md:flex-row items-center justify-center md:items-start px-[26px] md:pl-[20px] pt-[50px] md:pt-[115px] gap-[47px] md:gap-[26px] h-[794px] '>
         <div className='lg:relative lg:w-[700px]'>
           <div className='hidden lg:flex flex-col items-center justify-center bg-white h-[137px] w-[137px] rounded-full absolute top-[40px] -right-[20px]'>
             <h1 className='freight-font text-[52.843px] font-sans font-[500]'>
