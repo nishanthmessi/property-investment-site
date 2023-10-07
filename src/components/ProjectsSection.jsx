@@ -19,7 +19,7 @@ const ProjectsSection = () => {
   const currentProject = projectData[currentIndex]
 
   return (
-    <div className='mt-[81px] sm:mt-[400px] xl:mt-[300px] pl-[20px] sm:px-[63px] border-b-[1px]'>
+    <div className='flex flex-col container mx-auto mt-[81px] sm:mt-[400px] xl:mt-[300px] pl-[20px] sm:px-[63px] border-b-[1px]'>
       <div className='text-[#23262F]'>
         <h1 className='text-[12px] sm:text-[14px] font-[700] leading-[15.6px] sm:leading-[18.2px] tracking-[1.96px] uppercase'>
           our investment properties
@@ -38,12 +38,12 @@ const ProjectsSection = () => {
         </button>
       </div>
 
-      <div className='flex flex-col sm:flex-row items-center mt-[70px] sm:mt-0 -ml-[20px]'>
+      <div className='flex flex-col sm:flex-row items-center mt-[70px] sm:mt-0 -ml-[20px] 2xl:ml-20'>
         <div className='w-[367px] sm:hidden lg:block sm:w-auto h-[256.853px] sm:h-auto'>
           <img src={currentProject.propertyImg} alt='' className='' />
         </div>
         {/* Property details card */}
-        <div className='lg:absolute lg:right-0 mx-auto lg:mr-[63px] flex flex-col justify-start h-[479px] w-[335px] sm:w-[506px] px-[20px] sm:px-[40px] py-[24px] bg-[#fff] rounded-[4.828px] sm:rounded-[8px] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.12)] -mt-[30px] sm:-mt-0'>
+        <div className='lg:absolute lg:right-0 mx-auto 2xl:right-[280px] lg:mr-[63px] flex flex-col justify-start h-[479px] w-[335px] sm:w-[506px] px-[20px] sm:px-[40px] py-[24px] bg-[#fff] rounded-[4.828px] sm:rounded-[8px] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.12)] -mt-[30px] sm:-mt-0'>
           <h2 className='text-[#FF4F17] text-[12px] font-[700] leading-[15.6px] tracking-[1.68px] uppercase'>
             {currentProject.location}
           </h2>
