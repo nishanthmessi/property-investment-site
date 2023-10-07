@@ -31,7 +31,7 @@ const CalculatorSection = () => {
 
       {/* Calculator card */}
       <div className='flex flex-col-reverse sm:flex-row items-center justify-center gap-[50px] sm:gap-[139px]'>
-        <div className='h-[424.884px] w-[375px] flex-shrink-0 sm:bg-white rounded-[16px] px-[20px] sm:p-[44.96px]'>
+        <div className='h-[424.884px] w-[375px] sm:w-[435px]  flex-shrink-0 sm:bg-white rounded-[16px] px-[20px] sm:p-[44.96px]'>
           <div className='flex justify-between sm:mt-[32.2px]'>
             <h1 className='flex flex-col text-[17.984px] font-[500] leading-[22.481px] text-white sm:text-[#23262F] pt-[12.35px]'>
               <span>How much money can</span>
@@ -54,7 +54,7 @@ const CalculatorSection = () => {
           </div>
           <div className='w-[324px] sm:w-[350px] h-[11.24px] bg-[#F4F5F6] rounded-[62.946px] mt-[21.32px]'></div>
 
-          <div className='flex justify-center mt-[61px] w-[331px] sm:w-[354.07px] h-[128.256px] rounded-[8.992px] bg-[#F4F5F6] py-[28px]'>
+          <div className='flex justify-center mt-[61px] w-[331px] sm:w-[350px] h-[128.256px] rounded-[8.992px] bg-[#F4F5F6] py-[28px]'>
             <p className='flex flex-col justify-center items-center text-[#23262F] text-[14.27px] sm:text-[17.984px] font-[400] leading-normal tracking-[0.045px]'>
               <span>You will get</span>
               <span className='text-[21.405px] sm:text-[26.997px] font-[700] leading-normal tracking-[0.054px] sm:tracking-[0.067px]'>

@@ -48,9 +48,10 @@
   .hero-bg-sm {
     background-image: url('./assets/img/hero-sm.png');
     height: 685.023px;
-    width: 375px;
+    width: 100%;
     margin-top: 86.5px;
     background-repeat: no-repeat;
+    background-size: 100% 110%;
     object-fit: cover;
   }
 }

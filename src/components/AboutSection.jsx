@@ -42,10 +42,10 @@ const AboutSection = () => {
           <img
             src={InteriorImg2}
             alt=''
-            className='sm:hidden h-[280px] sm:h-[585px] w-[320px] sm:w-[655px] rounded-[8.135px] object-cover'
+            className='sm:hidden h-[280px] sm:h-[585px] w-[324px] sm:w-[655px] rounded-[8.135px] object-cover'
           />
         </div>
-        <div className='flex flex-col items-start text-[#F4F5F6] sm:mt-[120px] gap-[8px] sm:gap-[16px]'>
+        <div className='flex flex-col items-start text-[#F4F5F6] mt-[30px] sm:mt-[120px] gap-[8px] sm:gap-[16px]'>
           <h1 className='text-[12px] sm:[text-14px] uppercase text-[#FF4F17] leading-[15.6px] sm:leading-[18.2px] tracking-[1.68px] sm:tracking-[1.96px]'>
             why MGP
           </h1>
@@ -53,12 +53,9 @@ const AboutSection = () => {
             <span>Easy real estate </span>
             <span>investments within reach</span>
           </p>
-          <p className='flex flex-col text-[16px] font-[400] leading-[24px]'>
-            <span>
-              Discover the ease of real estate investments within reach
-            </span>
-            <span>- steady income, long-term appreciation, and tax</span>
-            <span>advantages await.</span>
+          <p className='flex flex-col text-[16px] font-[400] leading-[24px] w-[316px] sm:w-[426px]'>
+            Discover the ease of real estate investments within reach - steady
+            income, long-term appreciation, and tax advantages await.
           </p>
           <button className='text-[14px] font-[700] leading-[18.2px] px-[19.46px] sm:px-[20px] py-[12.97px] sm:py-[14px] border-[0.811px] border-[#F4F5F6] rounded-[114.504px] uppercase mt-[10px] sm:mt-0'>
             know more

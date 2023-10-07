@@ -50,11 +50,16 @@ const Footer = () => {
       </div>
 
       <div className='flex justify-center items-center py-[94px] sm:border-t-[1px] border-[#F4F5F6] border-opacity-[0.2] text-[#F4F5F6] sm:mx-[184px]'>
-        <img
-          src={LogoWhite}
-          alt=''
-          className='h-[55.086px] sm:h-[63px] w-[52.582px] sm:w-[66px] object-cover mr-[6px] sm:mr-[122px]'
-        />
+        <div>
+          <img
+            src={LogoWhite}
+            alt=''
+            className='h-[55.086px] sm:h-[63px] w-[52.582px] sm:w-[66px] object-cover mr-[6px] sm:mr-[122px]'
+          />
+          <p className='sm:hidden block text-[4.4px] font-[700] leading-normal opacity-[0.8px]'>
+            © 2023 MGP INVESTMENTS
+          </p>
+        </div>
 
         <div className='hidden sm:flex gap-[25px]'>
           {routes.map((route, index) => (
@@ -67,7 +72,7 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className='flex gap-[25px] ml-[54px] sm:ml-[44px]'>
+        <div className='flex gap-[25px] ml-[54px] sm:ml-[44px] mt-[20px] sm:mt-0'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='45'
