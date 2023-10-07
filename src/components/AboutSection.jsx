@@ -32,12 +32,12 @@ const AboutSection = () => {
         </defs>
       </svg>
 
-      <div className='flex flex-col sm:flex-row px-[26px] sm:pl-[66px] pt-[50px] sm:pt-[115px] gap-[47px] sm:gap-[126px] h-[794px]'>
+      <div className='flex flex-col sm:flex-row items-center md:items-start px-[26px] md:pl-[66px] pt-[50px] sm:pt-[115px] gap-[47px] md:gap-[126px] h-[794px]'>
         <div>
           <img
             src={InteriorImg}
             alt=''
-            className='hidden sm:block h-[339px] sm:h-[585px] w-[572.949px] sm:w-[655px]'
+            className='hidden lg:block h-[339px] sm:h-[585px] w-[572.949px] sm:w-[655px] rounded-[8.135px] object-cover'
           />
           <img
             src={InteriorImg2}
@@ -64,7 +64,7 @@ const AboutSection = () => {
       </div>
 
       {/* Key Points */}
-      <div className='grid grid-cols-2 sm:grid-cols-5 px-[40px] gap-[88px] sm:gap-[112px] text-[#F4F5F6] text-[20px] sm:text-[24px] font-[500] leading-normal freight-font sm:w-[1190px] mx-auto'>
+      <div className='grid grid-cols-2 xl:grid-cols-5 px-[40px] gap-[88px] sm:gap-[60px] xl:gap-[112px] text-[#F4F5F6] text-[20px] sm:text-[24px] font-[500] leading-normal freight-font xl:w-[1190px] w-auto mx-auto'>
         <div className='flex flex-col items-start sm:items-center gap-[4px]'>
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -218,12 +218,12 @@ const AboutSection = () => {
       </div>
 
       {/* Video element */}
-      <div className='flex justify-center mt-[81.34px] sm:mt-[113px]'>
+      <div className='flex justify-center mt-[81.34px] sm:mt-[63px] xl:mt-[113px]'>
         <iframe
           src='https://www.youtube.com/embed/kxJsCrkvtWo'
           allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
           allowFullScreen
-          className='h-[189px] sm:h-[596px] w-[347.557px] sm:w-[1096px] rounded-[5.074px] sm:rounded-[16px]'
+          className='h-[189px] sm:h-[496px] xl:h-[596px] w-[347.557px] sm:w-[796px] xl:w-[1096px] rounded-[5.074px] sm:rounded-[16px]'
         ></iframe>
       </div>
     </div>

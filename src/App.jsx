@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+import Lenis from '@studio-freight/lenis'
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import AboutSection from './components/AboutSection'
@@ -10,6 +12,16 @@ import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
 
 const App = () => {
+  useEffect(() => {
+    const lenis = new Lenis()
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
+  }, [])
+
   return (
     <div>
       <Navbar />

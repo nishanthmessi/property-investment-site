@@ -24,7 +24,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className='sm:hidden flex gap-[100px] items-start text-[14px] font-[400] leading-[18.2px] text-white w-[322px] px-[20px] pt-[25px]'>
+      <div className='lg:hidden flex gap-[100px] items-start justify-center text-[14px] font-[400] leading-[18.2px] text-white w-[322px] px-[20px] pt-[25px] sm:mx-auto'>
         <div className='flex flex-col gap-[10px]'>
           <button className='flex items-center h-[24px] py-[1px] px-[6px] rounded-[50px]'>
             {routes[0].route}
@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='flex justify-center items-center py-[94px] sm:border-t-[1px] border-[#F4F5F6] border-opacity-[0.2] text-[#F4F5F6] sm:mx-[184px]'>
+      <div className='flex justify-center items-center py-[94px] lg:border-t-[1px] border-[#F4F5F6] border-opacity-[0.2] text-[#F4F5F6] sm:mx-[184px]'>
         <div>
           <img
             src={LogoWhite}
@@ -61,7 +61,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className='hidden sm:flex gap-[25px]'>
+        <div className='hidden lg:flex gap-[25px]'>
           {routes.map((route, index) => (
             <button
               key={index}

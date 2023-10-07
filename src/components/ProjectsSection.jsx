@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import PropertyImg1 from '../assets/img/property-img1.png'
 import projectData from '../db/projectData'
 
 const ProjectsSection = () => {
@@ -20,7 +19,7 @@ const ProjectsSection = () => {
   const currentProject = projectData[currentIndex]
 
   return (
-    <div className='mt-[81px] sm:mt-[300px] pl-[20px] sm:px-[63px] border-b-[1px]'>
+    <div className='mt-[81px] sm:mt-[400px] xl:mt-[300px] pl-[20px] sm:px-[63px] border-b-[1px]'>
       <div className='text-[#23262F]'>
         <h1 className='text-[12px] sm:text-[14px] font-[700] leading-[15.6px] sm:leading-[18.2px] tracking-[1.96px] uppercase'>
           our investment properties
@@ -39,18 +38,12 @@ const ProjectsSection = () => {
         </button>
       </div>
       <div className='flex flex-col sm:flex-row items-center mt-[70px] sm:mt-0 -ml-[20px]'>
-        <div className='w-[367px] sm:w-auto h-[256.853px] sm:h-auto'>
-          <img src={PropertyImg1} alt='' className='' />
+        <div className='w-[367px] sm:hidden lg:block sm:w-auto h-[256.853px] sm:h-auto'>
+          <img src={currentProject.propertyImg} alt='' className='' />
         </div>
 
         {/* Property details card */}
-
-        {/* ===== add box-shadow: 0px 2.41378px 12.06891px 0px rgba(0, 0, 0, 0.12); ====== */}
-
-        <div
-          className='sm:absolute sm:right-0 sm:mr-[63px] flex flex-col justify-start h-[479px] w-[335px] sm:w-[506px] px-[20px] sm:px-[40px] py-[24px] bg-[#fff] rounded-[4.828px] sm:rounded-[8px] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.12)] -mt-[30px] sm:-mt-0'
-          key={currentProject.id}
-        >
+        <div className='lg:absolute lg:right-0 mx-auto lg:mr-[63px] flex flex-col justify-start h-[479px] w-[335px] sm:w-[506px] px-[20px] sm:px-[40px] py-[24px] bg-[#fff] rounded-[4.828px] sm:rounded-[8px] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.12)] -mt-[30px] sm:-mt-0'>
           <h2 className='text-[#FF4F17] text-[12px] font-[700] leading-[15.6px] tracking-[1.68px] uppercase'>
             {currentProject.location}
           </h2>
@@ -213,7 +206,7 @@ const ProjectsSection = () => {
               <p className='text-[16px] font-[500] tracking-[0.46px]'>
                 ₹ <span>0</span> / ₹ <span>{currentProject.totalCost}</span>
               </p>
-              <p className='pr-[20px]'>70%</p>
+              <p className='pr-[20px]'>100%</p>
             </div>
 
             <div className='h-[9px] w-[275px] sm:w-[404px] bg-[#FF4F17] rounded-[13px] mt-[16px]'></div>
@@ -223,7 +216,7 @@ const ProjectsSection = () => {
           </button>
         </div>
       </div>
-      <div className='flex justify-center items-center gap-[56px] text-[12px] font-[500] leading-[15.6px] tracking-[1.68px] uppercase py-[40px]'>
+      <div className='flex justify-center items-center gap-[56px] text-[12px] font-[500] leading-[15.6px] tracking-[1.68px] uppercase py-[40px] mr-10 sm:mr-0'>
         <button
           className='flex gap-[11px]'
           onClick={previousProject}

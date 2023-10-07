@@ -17,23 +17,6 @@
     font-family: 'FreightDispProMedium', sans-serif;
   }
 
-  .about-style {
-    border-radius: 0px 0px 0px 197px;
-    background: linear-gradient(180deg, #292c6d 0%, #414595 100%);
-  }
-
-  .custom-svg-fill {
-    fill: linear-gradient(
-      126deg,
-      rgba(255, 209, 212, 0.2) 4.39%,
-      rgba(255, 209, 212, 0) 52.78%
-    );
-  }
-
-  .linear-bg-blue {
-    background: linear-gradient(180deg, #292c6d 0%, #414595 100%);
-  }
-
   .hero-bg {
     height: 85vh;
     width: 100%;
@@ -53,5 +36,22 @@
     background-repeat: no-repeat;
     background-size: 100% 110%;
     object-fit: cover;
+  }
+
+  .about-style {
+    border-radius: 0px 0px 0px 197px;
+    background: linear-gradient(180deg, #292c6d 0%, #414595 100%);
+  }
+
+  .custom-svg-fill {
+    fill: linear-gradient(
+      126deg,
+      rgba(255, 209, 212, 0.2) 4.39%,
+      rgba(255, 209, 212, 0) 52.78%
+    );
+  }
+
+  .linear-bg-blue {
+    background: linear-gradient(180deg, #292c6d 0%, #414595 100%);
   }
 }

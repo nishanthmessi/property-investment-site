@@ -38,9 +38,12 @@ const QuestionSection = () => {
       {questions.map((ques, index) => (
         <div
           key={index}
-          className='flex items-center gap-[10px] sm:gap-[24px] border-b-[1px] cursor-pointer w-[323px] sm:w-auto'
+          className='flex items-center gap-[10px] sm:gap-[24px] border-b-[1px] cursor-pointer w-[354px] sm:w-auto'
         >
-          <div className='w-[768px]' onClick={() => toggleQuestion(index)}>
+          <div
+            className='w-[534px] xl:w-[768px]'
+            onClick={() => toggleQuestion(index)}
+          >
             <h1 className='text-[14px] sm:text-[22px] font-[400] sm:font-[700] leading-normal sm:leading-[28px] freight-font mt-[24px] mb-[32px] w-[303px] sm:w-auto'>
               {ques.question}
             </h1>

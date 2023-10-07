@@ -2,11 +2,11 @@ import Logo from '../assets/img/logo1.png'
 
 const Navbar = () => {
   return (
-    <div className='fixed top-0 bg-white sm:w-full flex justify-between items-center px-[20px] sm:px-[56px] py-[22px] h-[87px] w-[100%]'>
+    <div className='fixed top-0 bg-white sm:w-full flex justify-between items-center px-[20px] sm:px-[56px] py-[22px] h-[87px] w-[100%] z-[10]'>
       <div>
         <img src={Logo} alt='' className='w-[74px] h-[71px]' />
       </div>
-      <div className='hidden sm:flex items-center gap-8 text-[14px] leading-[18.2px] font-[400]'>
+      <div className='hidden lg:flex items-center gap-8 text-[14px] leading-[18.2px] font-[400]'>
         <div className='flex h-[26px] py-[1px] px-[8px] items-center gap-[25px] text-[#081228]'>
           <button className='px-[8px]'>About Us</button>
           <button className='px-[8px]'>Projects</button>
@@ -20,7 +20,7 @@ const Navbar = () => {
           Login
         </button>
       </div>
-      <div className='sm:hidden'>
+      <div className='lg:hidden'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width='24'
@@ -31,23 +31,23 @@ const Navbar = () => {
           <path
             d='M21 6H3'
             stroke='black'
-            stroke-width='2'
-            stroke-linecap='round'
-            stroke-linejoin='round'
+            strokeWidth='2'
+            strokeLinecap='round'
+            strokeLinejoin='round'
           />
           <path
             d='M21 12H9'
             stroke='black'
-            stroke-width='2'
-            stroke-linecap='round'
-            stroke-linejoin='round'
+            strokeWidth='2'
+            strokeLinecap='round'
+            strokeLinejoin='round'
           />
           <path
             d='M21 18H7'
             stroke='black'
-            stroke-width='2'
-            stroke-linecap='round'
-            stroke-linejoin='round'
+            strokeWidth='2'
+            strokeLinecap='round'
+            strokeLinejoin='round'
           />
         </svg>
       </div>

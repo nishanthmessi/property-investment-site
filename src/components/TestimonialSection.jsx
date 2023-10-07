@@ -1,13 +1,56 @@
-import React from 'react'
+import { useState } from 'react'
+
+const testimonials = [
+  {
+    id: 1,
+    comment:
+      'I would like to thank Invest In, it made investing in real estate easy, user friendly and transparent. Dedicated investor support team clarified all my queries regarding the investment and ROI. They have a structured way of process for the entire investment tenure with additional benefits. As a happy investor, I strongly recommend Invest In',
+    author: 'Mr. Balaji',
+    project: 'Raj park Medavakkam project',
+  },
+  {
+    id: 2,
+    comment:
+      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate tempora, quae et voluptatibus illum error similique expedita quibusdam ut assumenda libero veniam distinctio ipsam, laudantium dolorum nostrum temporibus velit repudiandae neque suscipit quis nemo aliquid rem? Praesentium pariatur provident autem',
+    author: 'Mr. Leo',
+    project: 'ECR project',
+  },
+  {
+    id: 3,
+    comment:
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis voluptas harum odio rem praesentium doloribus quidem repudiandae aut ut illo tempora esse facere, veniam distinctio numquam iure impedit cum pariatur excepturi, quisquam culpa veritatis quis incidunt accusantium? Non, sit sequi?',
+    author: 'Mr. Harold',
+    project: 'Sollinganallur project',
+  },
+]
 
 const TestimonialSection = () => {
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  const previousProject = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+    )
+  }
+
+  const nextProject = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+    )
+  }
+
+  const currentProject = testimonials[currentIndex]
+
   return (
-    <div className='flex flex-col items-start sm:items-center pt-[120px] sm:pt-[60px] px-[29px] sm:border-b-[1px]'>
+    <div className='flex flex-col items-start md:items-center pt-[120px] sm:pt-[460px] md:pt-[60px] px-[29px] md:border-b-[1px]'>
       <h1 className='freight-font text-[40px] font-[500] leading-normal text-center text-[#23262F]'>
         Testimonials
       </h1>
-      <div className='flex gap-[112px] my-[6px] sm:my-[40px]'>
-        <button className='hidden sm:flex justify-center items-center w-[40px] h-[40px] p-[10px] rounded-[35px] bg-[#E6E8EC]'>
+      <div className='flex gap-[66px] xl:gap-[112px] my-[6px] sm:my-[40px]'>
+        <button
+          className='hidden md:flex justify-center items-center w-[40px] h-[40px] p-[10px] rounded-[35px] bg-[#E6E8EC]'
+          onClick={previousProject}
+        >
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='20'
@@ -30,21 +73,19 @@ const TestimonialSection = () => {
           </svg>
         </button>
         <div className='w-[319px] sm:w-[576px]'>
-          <p className='h-auto text-[16px] sm:text-[20px] font-[500] leading-[24px] sm:leading-[32px] tracking-[-0.003px] sm:tracking-[-0.005px] text-start sm:text-center mb-[19.97px] sm:mb-0 freight-font'>
-            I would like to thank Invest In, it made investing in real estate
-            easy, user friendly and transparent. Dedicated investor support team
-            clarified all my queries regarding the investment and ROI. They have
-            a structured way of process for the entire investment tenure with
-            additional benefits. As a happy investor, I strongly recommend
-            Invest In
+          <p className='h-auto text-[16px] sm:text-[17px] md:text-[18px] lg:text-[20px] font-[500] leading-[24px] md:leading-[32px] tracking-[-0.003px] md:tracking-[-0.005px] text-start md:text-center mb-[19.97px] sm:mb-0 freight-font'>
+            {currentProject.comment}
           </p>
-          <h2 className='flex flex-col text-[12px] sm:text-[10px] font-[700] leading-[9.154px] sm:leading-[16.5px] tracking-[1.11px] sm:tracking-[2px] text-start sm:text-center uppercase text-[#353945] py-[12px] sm:py-[36px]'>
-            <span>Mr. Balaji</span>
-            <span className='hidden sm:block'>Raj park Medavakkam project</span>
+          <h2 className='flex flex-col text-[12px] md:text-[10px] font-[700] leading-[9.154px] sm:leading-[16.5px] tracking-[1.11px] md:tracking-[2px] text-start md:text-center uppercase text-[#353945] py-[12px] md:py-[36px]'>
+            <span>{currentProject.author}</span>
+            <span className='hidden sm:block'>{currentProject.project}</span>
           </h2>
         </div>
 
-        <button className='hidden sm:flex justify-center items-center w-[40px] h-[40px] p-[10px] rounded-[35px] bg-[#E6E8EC]'>
+        <button
+          className='hidden md:flex justify-center items-center w-[40px] h-[40px] p-[10px] rounded-[35px] bg-[#E6E8EC]'
+          onClick={nextProject}
+        >
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='20'
@@ -69,8 +110,11 @@ const TestimonialSection = () => {
       </div>
 
       {/* sm screen button */}
-      <div className='flex gap-[10px]'>
-        <button className='sm:hidden flex justify-center items-center w-[22.192px] h-[22.192px] p-[5.548pxpx] rounded-[19.418px] bg-[#E6E8EC]'>
+      <div className='flex gap-[10px] sm:-mt-[30px] md:-mt-0'>
+        <button
+          className='md:hidden flex justify-center items-center w-[22.192px] h-[22.192px] p-[5.548pxpx] rounded-[19.418px] bg-[#E6E8EC]'
+          onClick={previousProject}
+        >
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='20'
@@ -94,7 +138,10 @@ const TestimonialSection = () => {
           </svg>
         </button>
 
-        <button className='sm:hidden flex justify-center items-center w-[22.192px] h-[22.192px] p-[5.548pxpx] rounded-[19.418px] bg-[#E6E8EC]'>
+        <button
+          className='md:hidden flex justify-center items-center w-[22.192px] h-[22.192px] p-[5.548pxpx] rounded-[19.418px] bg-[#E6E8EC]'
+          onClick={nextProject}
+        >
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='20'
