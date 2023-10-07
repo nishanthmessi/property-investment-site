@@ -1,0 +1,56 @@
+@import url('./assets/font/stylesheet.css');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    font-family: 'DM Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  .freight-font {
+    font-family: 'FreightDispProMedium', sans-serif;
+  }
+
+  .about-style {
+    border-radius: 0px 0px 0px 197px;
+    background: linear-gradient(180deg, #292c6d 0%, #414595 100%);
+  }
+
+  .custom-svg-fill {
+    fill: linear-gradient(
+      126deg,
+      rgba(255, 209, 212, 0.2) 4.39%,
+      rgba(255, 209, 212, 0) 52.78%
+    );
+  }
+
+  .linear-bg-blue {
+    background: linear-gradient(180deg, #292c6d 0%, #414595 100%);
+  }
+
+  .hero-bg {
+    height: 85vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+      url('./assets/img/Hero-1.png');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    /* background-size: contain; */
+    background-size: 100% 100%;
+  }
+
+  .hero-bg-sm {
+    background-image: url('./assets/img/hero-sm.png');
+    height: 685.023px;
+    width: 375px;
+    margin-top: 86.5px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+}
