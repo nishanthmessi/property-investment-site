@@ -32,13 +32,25 @@ const AboutSection = () => {
         </defs>
       </svg>
 
-      <div className='flex flex-col md:flex-row items-center md:items-start px-[26px] md:pl-[66px] pt-[50px] sm:pt-[115px] gap-[47px] md:gap-[126px] h-[794px]'>
-        <div>
+      <div className='flex flex-col md:flex-row items-center md:items-start px-[26px] md:pl-[20px] pt-[50px] sm:pt-[115px] gap-[47px] md:gap-[126px] h-[794px]'>
+        <div className='lg:relative lg:w-[700px]'>
+          <div className='hidden lg:flex flex-col items-center justify-center bg-white h-[137px] w-[137px] rounded-full absolute top-[40px] -right-[20px]'>
+            <h1 className='freight-font text-[52.843px] font-sans font-[500]'>
+              18%
+            </h1>
+            <p className='text-[12.535px] font-[700] uppercase'>Returns</p>
+          </div>
           <img
             src={InteriorImg}
             alt=''
             className='hidden lg:block h-[339px] sm:h-[585px] w-[572.949px] sm:w-[655px] rounded-[8.135px] object-cover'
           />
+          <div className='sm:hidden relative flex flex-col items-center justify-center bg-white h-[61px] w-[61px] rounded-full top-[90px] -right-[280px]'>
+            <h1 className='freight-font text-[23.529px] font-sans font-[500]'>
+              18%
+            </h1>
+            <p className='text-[5.581px] font-[700] uppercase'>Returns</p>
+          </div>
           <img
             src={InteriorImg2}
             alt=''
