@@ -7,7 +7,7 @@ import ProjectsSection from './components/ProjectsSection'
 import InvestmentSection from './components/InvestmentSection'
 import CalculatorSection from './components/CalculatorSection'
 import TestimonialSection from './components/TestimonialSection'
-import QuestionSection from './components/QuestionSection'
+import FaqSection from './components/FaqSection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
 
@@ -31,7 +31,7 @@ const App = () => {
       <InvestmentSection />
       <CalculatorSection />
       <TestimonialSection />
-      <QuestionSection />
+      <FaqSection />
       <div className='bg-[#0A142F]'>
         <ContactSection />
         <Footer />

@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='flex justify-center items-center py-[94px] lg:border-t-[1px] border-[#F4F5F6] border-opacity-[0.2] text-[#F4F5F6] sm:mx-[184px]'>
+      <div className='flex justify-center items-center py-[94px] lg:border-t-[1px] border-[#F4F5F6] border-opacity-[0.2] text-[#F4F5F6] 2xl:mx-[184px]'>
         <div>
           <img
             src={LogoWhite}

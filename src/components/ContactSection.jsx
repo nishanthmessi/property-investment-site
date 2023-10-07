@@ -1,5 +1,3 @@
-import React from 'react'
-
 const ContactSection = () => {
   return (
     <div className='flex flex-col items-start sm:items-center py-[52px] px-[28px] sm:px-0 text-white'>

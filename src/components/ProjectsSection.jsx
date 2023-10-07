@@ -37,11 +37,11 @@ const ProjectsSection = () => {
           fulfilled projects
         </button>
       </div>
+
       <div className='flex flex-col sm:flex-row items-center mt-[70px] sm:mt-0 -ml-[20px]'>
         <div className='w-[367px] sm:hidden lg:block sm:w-auto h-[256.853px] sm:h-auto'>
           <img src={currentProject.propertyImg} alt='' className='' />
         </div>
-
         {/* Property details card */}
         <div className='lg:absolute lg:right-0 mx-auto lg:mr-[63px] flex flex-col justify-start h-[479px] w-[335px] sm:w-[506px] px-[20px] sm:px-[40px] py-[24px] bg-[#fff] rounded-[4.828px] sm:rounded-[8px] shadow-[0px_4px_20px_0px_rgba(0,0,0,0.12)] -mt-[30px] sm:-mt-0'>
           <h2 className='text-[#FF4F17] text-[12px] font-[700] leading-[15.6px] tracking-[1.68px] uppercase'>
@@ -216,6 +216,7 @@ const ProjectsSection = () => {
           </button>
         </div>
       </div>
+      {/* Navigation btns */}
       <div className='flex justify-center items-center gap-[56px] text-[12px] font-[500] leading-[15.6px] tracking-[1.68px] uppercase py-[40px] mr-10 sm:mr-0'>
         <button
           className='flex gap-[11px]'

@@ -24,7 +24,6 @@
       url('./assets/img/Hero-1.png');
     background-repeat: no-repeat;
     object-fit: cover;
-    /* background-size: contain; */
     background-size: 100% 100%;
   }
 

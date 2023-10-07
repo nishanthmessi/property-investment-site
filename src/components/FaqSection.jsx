@@ -1,34 +1,12 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
+import questions from '../db/faqData'
 
-const QuestionSection = () => {
+const FaqSection = () => {
   const [isActive, setIsActive] = useState(null)
 
   const toggleQuestion = (index) => {
     setIsActive((prevIndex) => (prevIndex === index ? null : index))
   }
-
-  const questions = [
-    {
-      question: 'Who can invest on invest in properties',
-      ans: 'Any individual over the age of 18 years having a valid PAN and Aadhaar card can invest.Investment options provided on Invest In offer advantages like guaranteed returns of 18% P.A',
-    },
-    {
-      question: 'What is the investment period?',
-      ans: 'Any individual over the age of 18 years having a valid PAN and Aadhaar card can invest.Investment options provided on Invest In offer advantages like guaranteed returns of 18% P.A',
-    },
-    {
-      question: 'How do I get started as an investor with invest in properties',
-      ans: 'Any individual over the age of 18 years having a valid PAN and Aadhaar card can invest.Investment options provided on Invest In offer advantages like guaranteed returns of 18% P.A',
-    },
-    {
-      question: 'How do I get started as an investor with invest in properties',
-      ans: 'Any individual over the age of 18 years having a valid PAN and Aadhaar card can invest.Investment options provided on Invest In offer advantages like guaranteed returns of 18% P.A',
-    },
-    {
-      question: 'How do I get started as an investor with invest in properties',
-      ans: 'Any individual over the age of 18 years having a valid PAN and Aadhaar card can invest.Investment options provided on Invest In offer advantages like guaranteed returns of 18% P.A',
-    },
-  ]
 
   return (
     <div className='flex flex-col items-start sm:items-center px-[25px] sm:px-0 py-[20px] sm:py-[37.5px] mt-[40px] sm:mt-0'>
@@ -98,4 +76,4 @@ const QuestionSection = () => {
   )
 }
 
-export default QuestionSection
+export default FaqSection

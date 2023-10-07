@@ -1,28 +1,5 @@
 import { useState } from 'react'
-
-const testimonials = [
-  {
-    id: 1,
-    comment:
-      'I would like to thank Invest In, it made investing in real estate easy, user friendly and transparent. Dedicated investor support team clarified all my queries regarding the investment and ROI. They have a structured way of process for the entire investment tenure with additional benefits. As a happy investor, I strongly recommend Invest In',
-    author: 'Mr. Balaji',
-    project: 'Raj park Medavakkam project',
-  },
-  {
-    id: 2,
-    comment:
-      'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate tempora, quae et voluptatibus illum error similique expedita quibusdam ut assumenda libero veniam distinctio ipsam, laudantium dolorum nostrum temporibus velit repudiandae neque suscipit quis nemo aliquid rem? Praesentium pariatur provident autem',
-    author: 'Mr. Leo',
-    project: 'ECR project',
-  },
-  {
-    id: 3,
-    comment:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis voluptas harum odio rem praesentium doloribus quidem repudiandae aut ut illo tempora esse facere, veniam distinctio numquam iure impedit cum pariatur excepturi, quisquam culpa veritatis quis incidunt accusantium? Non, sit sequi?',
-    author: 'Mr. Harold',
-    project: 'Sollinganallur project',
-  },
-]
+import testimonials from '../db/testimonialData'
 
 const TestimonialSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -42,7 +19,7 @@ const TestimonialSection = () => {
   const currentProject = testimonials[currentIndex]
 
   return (
-    <div className='flex flex-col items-start md:items-center pt-[120px] sm:pt-[460px] md:pt-[60px] px-[29px] md:border-b-[1px]'>
+    <div className='flex flex-col items-start md:items-center pt-[140px] sm:pt-[360px] md:pt-[60px] px-[29px] md:border-b-[1px]'>
       <h1 className='freight-font text-[40px] font-[500] leading-normal text-center text-[#23262F]'>
         Testimonials
       </h1>
@@ -109,7 +86,7 @@ const TestimonialSection = () => {
         </button>
       </div>
 
-      {/* sm screen button */}
+      {/* sm screen btns */}
       <div className='flex gap-[10px] sm:-mt-[30px] md:-mt-0'>
         <button
           className='md:hidden flex justify-center items-center w-[22.192px] h-[22.192px] p-[5.548pxpx] rounded-[19.418px] bg-[#E6E8EC]'

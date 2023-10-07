@@ -1,6 +1,7 @@
 import React from 'react'
 import { Chart as ChartJS } from 'chart.js/auto'
 import { Doughnut } from 'react-chartjs-2'
+import CustomSlider from './shared/CustomSlider'
 
 const CalculatorSection = () => {
   const data = {
@@ -50,7 +51,7 @@ const CalculatorSection = () => {
               ₹500,000
             </p>
           </div>
-          <div className='w-[324px] lg:w-[350px] h-[11.24px] bg-[#F4F5F6] rounded-[62.946px] mt-[21.32px]'></div>
+          <CustomSlider />
 
           <div className='flex justify-between mt-[32.2px]'>
             <h1 className='flex flex-col text-[17.984px] font-[500] leading-[22.481px] text-white sm:text-[#23262F] pt-[12.35px]'>
@@ -61,7 +62,7 @@ const CalculatorSection = () => {
               6 months
             </p>
           </div>
-          <div className='w-[324px] lg:w-[350px] h-[11.24px] bg-[#F4F5F6] rounded-[62.946px] mt-[21.32px]'></div>
+          <CustomSlider />
 
           <div className='flex justify-center mt-[61px] lg:w-[331px] xl:w-[350px] h-[128.256px] rounded-[8.992px] bg-[#F4F5F6] py-[28px]'>
             <p className='flex flex-col justify-center items-center text-[#23262F] text-[14.27px] sm:text-[17.984px] font-[400] leading-normal tracking-[0.045px]'>
@@ -74,6 +75,7 @@ const CalculatorSection = () => {
           </div>
         </div>
 
+        {/* Donut Chart */}
         <div className='w-[358.089px] sm:w-[317px] lg:w-[417px] h-[358.089px] sm:h-[317px] lg:h-[417px]'>
           <Doughnut data={data} options={options} />
         </div>
