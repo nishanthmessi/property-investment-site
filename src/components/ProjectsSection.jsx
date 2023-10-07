@@ -19,8 +19,8 @@ const ProjectsSection = () => {
   const currentProject = projectData[currentIndex]
 
   return (
-    <div className='flex flex-col container mx-auto mt-[81px] sm:mt-[400px] xl:mt-[300px] pl-[20px] sm:px-[63px] border-b-[1px]'>
-      <div className='text-[#23262F]'>
+    <div className='flex flex-col container mx-auto mt-[121px] sm:mt-[400px] xl:mt-[300px] pl-[20px] sm:px-[63px] border-b-[1px]'>
+      <div className='text-[#23262F] w-[256px] sm:w-auto'>
         <h1 className='text-[12px] sm:text-[14px] font-[700] leading-[15.6px] sm:leading-[18.2px] tracking-[1.96px] uppercase'>
           our investment properties
         </h1>
